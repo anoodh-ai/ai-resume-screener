@@ -1,0 +1,8 @@
+Name: Gokul P
+Email: gokul@example.com
+Skills:
+Event Management, Marketing, Public Speaking
+Experience:
+- Managed college fests and cultural programs
+- No programming or AI experience
+- Strong in team coordination

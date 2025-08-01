@@ -1,0 +1,8 @@
+Name: Kavya M
+Email: kavya@example.com
+Skills:
+Deep Learning, Python, Cloud, Power BI, SQL
+Experience:
+- Internship in AI/ML
+- Created NLP models for sentiment analysis
+- Knowledge in Azure Functions

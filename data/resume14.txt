@@ -1,0 +1,8 @@
+Name: Anjali S
+Email: anjali@example.com
+Skills:
+Nursing, Patient Care, First Aid, Hospital Management
+Experience:
+- 3 years as Nurse
+- Worked in ICU and ER departments
+- No coding or cloud experience

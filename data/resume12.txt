@@ -1,0 +1,8 @@
+Name: Sneha R
+Email: sneha@example.com
+Skills:
+Accounting, Tally, Excel, Finance, Taxation
+Experience:
+- 2 years in finance role
+- Handled GST filing and payroll
+- No programming skills

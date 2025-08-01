@@ -1,0 +1,8 @@
+Name: Haritha P
+Email: haritha@example.com
+Skills:
+SQL, Python, Data Visualization, Azure ML, Pandas
+Experience:
+- Created sales dashboards
+- Worked on predictive modeling
+- Familiar with GitHub Actions for CI/CD

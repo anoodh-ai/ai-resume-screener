@@ -1,0 +1,8 @@
+Name: Adarsh N
+Email: adarsh@example.com
+Skills:
+Python, Machine Learning, SQL, Azure, JavaScript
+Experience:
+- 2 years as Data Analyst
+- Built sales forecasting models
+- Deployed ML pipelines on Azure

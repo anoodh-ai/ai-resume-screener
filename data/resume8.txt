@@ -1,0 +1,8 @@
+Name: Anoop S
+Email: anoop@example.com
+Skills:
+JavaScript, React, Python, Machine Learning, Azure
+Experience:
+- Developed AI chatbot using LangChain
+- Built portfolio SaaS application
+- Basic cloud deployment experience

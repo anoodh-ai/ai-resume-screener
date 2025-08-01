@@ -1,0 +1,8 @@
+Name: Rahul M
+Email: rahul@example.com
+Skills:
+Hardware Troubleshooting, Networking, CCTV Setup
+Experience:
+- 4 years as IT Support Engineer
+- Handled network installation and repair
+- No exposure to AI or software development

@@ -1,0 +1,8 @@
+Name: Ajay K
+Email: ajay@example.com
+Skills:
+Photoshop, Illustrator, Graphic Design, Video Editing
+Experience:
+- 3 years as Graphic Designer
+- Created marketing banners and ads
+- No AI or cloud knowledge

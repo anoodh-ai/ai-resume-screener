@@ -1,0 +1,8 @@
+Name: Vishnu R
+Email: vishnu@example.com
+Skills:
+Azure, C#, Python, Machine Learning, Speech Recognition
+Experience:
+- Built voice assistant for office tasks
+- Deployed ML models in Azure Cognitive Services
+- Knowledge of real-time APIs
