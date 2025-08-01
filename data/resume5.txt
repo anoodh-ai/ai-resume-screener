@@ -1,0 +1,10 @@
+Name: Sneha T
+Email: sneha@example.com
+
+Skills:
+Python, SQL, Machine Learning, Azure, JavaScript
+
+Experience:
+- Full-stack developer intern
+- Worked on AI Resume Screener project
+- Built ML pipelines and dashboards

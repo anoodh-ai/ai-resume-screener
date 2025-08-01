@@ -1,0 +1,9 @@
+Name: Arjun P
+Email: arjun@example.com
+
+Skills:
+C, Basic Python
+
+Experience:
+- Final year student
+- Mini project on C programming

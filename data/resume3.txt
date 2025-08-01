@@ -1,0 +1,10 @@
+Name: Meera S
+Email: meera@example.com
+
+Skills:
+JavaScript, Azure, HTML, CSS
+
+Experience:
+- Developed portfolio websites
+- Integrated Azure Functions for automation
+- Basic Python knowledge

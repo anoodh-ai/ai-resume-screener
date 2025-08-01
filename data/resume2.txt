@@ -1,0 +1,10 @@
+Name: Ravi K
+Email: ravi@example.com
+
+Skills:
+SQL, Data Analysis, Python
+
+Experience:
+- 2 years as Junior Data Engineer
+- Created dashboards and sales reports
+- Basic knowledge of Azure

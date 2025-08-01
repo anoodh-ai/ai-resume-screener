@@ -1,0 +1,10 @@
+Name: Anjali R
+Email: anjali@example.com
+
+Skills:
+Python, Machine Learning, SQL, Azure
+
+Experience:
+- Built AI chatbots for college projects
+- Created predictive models using scikit-learn
+- Deployed ML model to Azure cloud

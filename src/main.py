@@ -1,29 +1,40 @@
-import pandas as pd
-import numpy as np
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
-import pickle
+import os
+import re
 
-# Step 1: Load sample data (temporary CSV or hardcoded)
-data = [
-    ("Python developer with ML experience", 1),
-    ("Sales manager experience, no tech background", 0)
-]
+# Path to resumes
+RESUME_FOLDER = r"C:\Users\anoodhivi\2025-2026 projects\ai-resume-screener\data"
 
-# Step 2: Convert to DataFrame
-df = pd.DataFrame(data, columns=["resume_text", "selected"])
+# Define keywords (skills required for job)
+KEYWORDS = ["python", "machine learning", "sql", "azure", "javascript"]
 
-# Step 3: Vectorize text
-vectorizer = TfidfVectorizer()
-X = vectorizer.fit_transform(df["resume_text"])
-y = df["selected"]
 
-# Step 4: Train simple model
-model = LogisticRegression()
-model.fit(X, y)
+def read_resume(file_path):
+    with open(file_path, "r", encoding="utf-8") as file:
+        return file.read().lower()
 
-# Step 5: Save model
-with open("../models/resume_model.pkl", "wb") as f:
-    pickle.dump((vectorizer, model), f)
+def calculate_score(text):
+    score = 0
+    for word in KEYWORDS:
+        if re.search(rf"\b{word}\b", text):
+            score += 1
+    return (score / len(KEYWORDS)) * 100  # percentage
 
-print("Model trained and saved successfully!")
+def analyze_resumes():
+    results = []
+    resumes = [f for f in os.listdir(RESUME_FOLDER) if f.endswith(".txt")]
+
+    for resume in resumes:
+        path = os.path.join(RESUME_FOLDER, resume)
+        text = read_resume(path)
+        score = calculate_score(text)
+        results.append((resume, score))
+
+    # Sort high to low score
+    results.sort(key=lambda x: x[1], reverse=True)
+
+    print("Resume Rankings:")
+    for res, score in results:
+        print(f"{res}: {score:.2f}% match")
+
+if __name__ == "__main__":
+    analyze_resumes()
