@@ -25,16 +25,16 @@ def analyze_resumes():
 
         # Convert resume to vector using saved vectorizer
         y = vectorizer.transform([text])
-        prediction = model.predict(y)[0]
+        probability = model.predict_proba(y)[0][1]  # Probability of class 1
 
-        results.append((resume, prediction))
+        results.append((resume, probability * 100))
 
     # Sort: relevant (1) first
     results.sort(key=lambda x: x[1], reverse=True)
 
-    print("Resume Predictions (1 = Relevant, 0 = Not Relevant):")
-    for res, pred in results:
-        print(f"{res}: {pred}")
+    print("Resume Rankings (match %):")
+    for res, score in results:
+        print(f"{res}: {score:.2f}% match")
 
 if __name__ == "__main__":
     analyze_resumes()
