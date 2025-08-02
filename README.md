@@ -46,7 +46,6 @@ python -m venv .venv
 #.venv/bin/activate      # If you're on Mac/Linux
 pip install -r requirements.txt    
 ```
-
 ### 2. Train the model (if needed)
 ```bash
 
@@ -61,6 +60,8 @@ python src/main.py
 ## Accuracy
 (Current test dataset) – ~80–85%
 (Will improve as more resumes are added)
+
+
 ## Future Improvements
 
 - PDF/Docx parsing
@@ -68,3 +69,9 @@ python src/main.py
 - Azure cloud deployment
 - Advanced skill matching using embeddings
 
+---
+ #### 📄 License
+```markdown
+MIT License — see [LICENSE](LICENSE) for full details.
+> This project is shared for learning and inspiration. Please credit the author (Anoodh A) if reused or modified.
+```
