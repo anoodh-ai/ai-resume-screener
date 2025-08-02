@@ -8,13 +8,64 @@ import joblib
 # Sample training data (later can expand)
 data = {
     "text": [
+        # Relevant (1)
         "python machine learning sql azure",
-        "c programming basic python",
-        "javascript azure html css",
-        "python sql machine learning javascript azure",
-        "basic java html"
+        "javascript azure react cloud devops",
+        "sql python data analysis azure pipelines",
+        "machine learning deep learning python",
+        "python azure javascript sql cloud",
+        "ai chatbot langchain javascript python",
+        "data science pandas numpy sklearn azure",
+        "azure devops cloud pipelines automation",
+        "natural language processing nlp python",
+        "sql data warehouse azure data engineer",
+        "computer vision python opencv deep learning",
+        "react typescript azure full stack developer",
+        "azure functions python serverless backend",
+        "predictive analytics sales forecast python",
+        "python flask rest api cloud deployment",
+        "javascript node typescript serverless azure",
+        "mlops azure ml model deployment python",
+        "cloud security azure key vault python",
+        "ai resume screener python machine learning",
+        "microsoft azure ai cognitive services python",
+        "sql azure data factory pipelines engineer",
+        "full stack developer javascript azure python",
+        "ai powered chatbot using langchain python",
+        "azure kubernetes docker cloud engineer",
+        "pytorch deep learning image classification python",
+
+        # Not Relevant (0)
+        "c programming basic loops arrays",
+        "java beginner oops concepts only",
+        "networking fundamentals hardware support",
+        "graphic design photoshop illustrator",
+        "excel powerpoint word office tools",
+        "basic electronics arduino raspberry pi",
+        "desktop support troubleshooting windows",
+        "embedded systems microcontroller basics",
+        "video editing premiere after effects",
+        "customer service call center skills",
+        "marketing digital social media ads",
+        "finance accounting tally ms excel",
+        "content writing blogging seo",
+        "civil engineering autocad revit",
+        "mechanical engineering cad cam",
+        "hotel management food service",
+        "basic biology chemistry laboratory",
+        "electrical wiring motor repair",
+        "human resources recruitment onboarding",
+        "basic math tutoring primary school",
+        "primary teacher lesson planning",
+        "fashion design textile basics",
+        "animation 2d 3d blender maya",
+        "music production audio mixing",
+        "photography camera handling basics"
     ],
-    "label": [1, 0, 1, 1, 0]  # 1 = relevant, 0 = not relevant
+    "label": [
+        1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+        0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+    ]
 }
 
 df = pd.DataFrame(data)

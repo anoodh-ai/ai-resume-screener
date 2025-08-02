@@ -1,23 +1,19 @@
 import os
-import re
+import joblib
 
-# Path to resumes
+# Paths
+MODEL_PATH = r"C:\Users\anoodhivi\2025-2026 projects\ai-resume-screener\models\resume_model.pkl"
+VECTORIZER_PATH = r"C:\Users\anoodhivi\2025-2026 projects\ai-resume-screener\models\vectorizer.pkl"
 RESUME_FOLDER = r"C:\Users\anoodhivi\2025-2026 projects\ai-resume-screener\data"
 
-# Define keywords (skills required for job)
-KEYWORDS = ["python", "machine learning", "sql", "azure", "javascript"]
-
+# Load model & vectorizer
+model = joblib.load(MODEL_PATH)
+vectorizer = joblib.load(VECTORIZER_PATH)
 
 def read_resume(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
         return file.read().lower()
 
-def calculate_score(text):
-    score = 0
-    for word in KEYWORDS:
-        if re.search(rf"\b{word}\b", text):
-            score += 1
-    return (score / len(KEYWORDS)) * 100  # percentage
 
 def analyze_resumes():
     results = []
@@ -26,15 +22,20 @@ def analyze_resumes():
     for resume in resumes:
         path = os.path.join(RESUME_FOLDER, resume)
         text = read_resume(path)
-        score = calculate_score(text)
-        results.append((resume, score))
 
-    # Sort high to low score
+        # Convert resume to vector using saved vectorizer
+        y = vectorizer.transform([text])
+        prediction = model.predict(y)[0]
+
+        results.append((resume, prediction))
+
+    # Sort: relevant (1) first
     results.sort(key=lambda x: x[1], reverse=True)
 
-    print("Resume Rankings:")
-    for res, score in results:
-        print(f"{res}: {score:.2f}% match")
+    print("Resume Predictions (1 = Relevant, 0 = Not Relevant):")
+    for res, pred in results:
+        print(f"{res}: {pred}")
 
 if __name__ == "__main__":
     analyze_resumes()
+
