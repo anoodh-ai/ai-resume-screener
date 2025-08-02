@@ -1,0 +1,8 @@
+Name: Arjun P
+Email: arjun@example.com
+Skills:
+Python, SQL, Azure, Tableau, Machine Learning
+Experience:
+- 1.5 years as Business Analyst
+- Built dashboards using SQL + Azure
+- Worked on predictive analytics

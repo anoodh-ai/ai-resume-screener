@@ -1,0 +1,8 @@
+Name: Varun T
+Email: varun@example.com
+Skills:
+Python, Azure, JavaScript, SQL, React
+Experience:
+- 3 years as Full Stack Developer
+- Integrated ML APIs with React front-end
+- Experience with Azure cloud hosting

@@ -1,0 +1,8 @@
+Name: Diya S
+Email: diya@example.com
+Skills:
+Machine Learning, Deep Learning, Python, Azure
+Experience:
+- 2 years as AI Research Intern
+- Developed image classification models
+- Used Azure ML for deployment

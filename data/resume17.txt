@@ -1,0 +1,8 @@
+Name: Meera K
+Email: meera@example.com
+Skills:
+Python, JavaScript, Azure, Cloud Functions
+Experience:
+- 2 years as Cloud Engineer
+- Automated pipelines using Azure DevOps
+- Basic ML model deployments
