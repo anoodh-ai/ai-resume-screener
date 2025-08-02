@@ -58,8 +58,8 @@ python src/main.py
 ```
 
 ## Accuracy
-(Current test dataset) – ~80–85%
-(Will improve as more resumes are added)
+- (Current test dataset) : ~100%
+- Expected real-world accuracy: ~80–85% (Will improve as more resumes are added)
 
 
 ## Future Improvements
