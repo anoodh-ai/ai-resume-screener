@@ -7,7 +7,7 @@ Machine Learning (Logistic Regression + TF-IDF).
 
 ## Features
 - Reads .txt resumes from data/ folder
-- Extracts key skills (Python, SQL, Azure,
+- Extract key skills (Python, SQL, Azure,
 JavaScript, Machine Learning, etc.)
 - Scores resumes and ranks them in descending order
 - Pre-trained model saved in models/ folder for reuse
