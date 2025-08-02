@@ -20,8 +20,20 @@ JavaScript, Machine Learning, etc.)
 - Git & GitHub for version control
 
 ## Project Structure
+```markdown
+ai-resume-screener/
 
-ai-resume-screener/ ├── 📂 data/                 # Sample resumes in .txt format ├── 📂 models/               # Saved ML model & vectorizer ├── 📂 src/                  # Core scripts │   ├── 🧠 train_model.py    # Train and save your model │   └── 🎯 main.py           # Predict & rank resumes ├── 📄 requirements.txt      # Project dependencies └── 📘 README.md             # Project overview and instructions
+├── 📂 data/              # Sample resumes in .txt format
+├── 📂 models/            # Saved ML model & vectorizer
+├── 📂 src/               # Core scripts
+│ ├── 🧠 train_model.py   # Train and save your model
+│ └── 🎯 main.py          # Predict & rank resumes
+├── 📄 requirements.txt   # Project dependencies
+└── 📘 README.md          # Project overview and instructions
+
+```
+
+## How to Run
 
 ### 1. Clone the repository & set up a virtual environment
 
