@@ -1,23 +1,58 @@
 # AI Resume Screener
 
-A Python project that automatically analyzes and ranks resumes based on skill match using NLP and machine learning.  
-Useful for recruiters to shortlist candidates faster.
+
+An AI-based tool that analyzes resumes and ranks 
+candidates based on skill match using 
+Machine Learning (Logistic Regression + TF-IDF).
 
 ## Features
-- Extract text from resumes (PDF/DOCX)
-- Match skills with job description
-- Rank resumes based on relevance
+- Reads .txt resumes from data/ folder
+- Extracts key skills (Python, SQL, Azure,
+JavaScript, Machine Learning, etc.)
+- Scores resumes and ranks them in descending order
+- Pre-trained model saved in models/ folder for reuse
+- Modular code: train_model.py (training) and main.py (screening)
 
 ## Tech Stack
-- Python
+- Python 3.10
 - Pandas, NumPy, Scikit-learn, NLTK
+- Joblib (model persistence)
+- Git & GitHub for version control
 
-## How to Run
-1. Clone this repository
-2. Install dependencies: `pip install -r requirements.txt`
-3. Place sample resumes in `data/` folder
-4. Run: `python src/main.py`
+## Project Structure
 
+ai-resume-screener/ ├── 📂 data/                 # Sample resumes in .txt format ├── 📂 models/               # Saved ML model & vectorizer ├── 📂 src/                  # Core scripts │   ├── 🧠 train_model.py    # Train and save your model │   └── 🎯 main.py           # Predict & rank resumes ├── 📄 requirements.txt      # Project dependencies └── 📘 README.md             # Project overview and instructions
+
+### 1. Clone the repository & set up a virtual environment
+
+```bash
+
+git clone <https://github.com/anoodh-ai/ai-resume-screener.git>
+cd ai-resume-screener
+python -m venv .venv
+.venv\Scripts\activate   # For Windows
+#.venv/bin/activate      # If you're on Mac/Linux
+pip install -r requirements.txt    
+```
+
+### 2. Train the model (if needed)
+```bash
+
+python src/train_model.py
+```
+### 3. Add resumes & run the screening
+```bash
+
+python src/main.py
+```
+
+## Accuracy
+(Current test dataset) – ~80–85%
+(Will improve as more resumes are added)
 ## Future Improvements
-- Add web interface
-- Support multiple job roles
+
+- PDF/Docx parsing
+- Web UI using Flask/Streamlit
+- Azure cloud deployment
+- Advanced skill matching using embeddings
+
